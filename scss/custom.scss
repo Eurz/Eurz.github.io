@@ -1,0 +1,89 @@
+// Import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+// Custom code
+$primary: orange;
+$light: #f7f7f7;
+
+$custom-theme-colors: (
+    'main-game': #eb4d4c,
+);
+
+.bg-main-game {
+    background-color: #eb4d4c;
+}
+.text-main-game {
+    color: #eb4d4c;
+}
+.bg-body-game {
+    background: rgb(247, 247, 247);
+    background: linear-gradient(
+        90deg,
+        rgba(247, 247, 247, 1) 0%,
+        rgba(247, 247, 247, 1) 49%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.dice {
+    height: 150px;
+    width: 150px;
+}
+.dice-effect {
+    transform: rotate(0);
+    scale: (1);
+
+    transition: all 0.3s ease-in-out;
+}
+.dice-animate {
+    transform: rotate(1turn);
+    scale: (1.2);
+}
+.selected-player {
+    position: relative;
+}
+.selected-player::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: -30px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background-color: #eb4d4c;
+}
+
+.global-score {
+    font-size: 2em;
+}
+.anime-container {
+    position: relative;
+}
+.anime-current {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    border-radius: 100%;
+    animation: animeon 0.3s linear 0s 1 normal backwards;
+}
+
+@keyframes animeon {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1.3);
+
+        background-color: #fff;
+        opacity: 0;
+    }
+}
+
+// SCSS Variables
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
