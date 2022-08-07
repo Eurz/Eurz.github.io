@@ -38,6 +38,8 @@ export default class Game {
         this.soundsEffect.play('roll')
 
         const randomNumber = Math.floor(Math.random() * 5 + 1)
+
+        // this.dice.className = `bi bi-dice-${randomNumber}`
         this.dice.className = `bi bi-dice-${randomNumber}`
 
         if (randomNumber === 1) {
