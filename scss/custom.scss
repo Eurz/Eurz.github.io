@@ -1,8 +1,11 @@
 // Import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
+
 // Custom code
 $primary: orange;
 $light: #f7f7f7;
+
+$pink-orange: #eb4d4c;
 
 $custom-theme-colors: (
     'main-game': #eb4d4c,
@@ -14,6 +17,7 @@ $custom-theme-colors: (
 .text-main-game {
     color: #eb4d4c;
 }
+
 .bg-body-game {
     background: rgb(247, 247, 247);
     background: linear-gradient(
@@ -86,4 +90,10 @@ $custom-theme-colors: (
 }
 
 // SCSS Variables
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --bs-body-font-family: 'Lato', sans-serif;
+}

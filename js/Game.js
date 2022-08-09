@@ -11,7 +11,7 @@ export default class Game {
         this.btnNewGame = document.querySelector('#btn-new-game')
         this.btnRollDice = document.querySelector('#btn-roll-dice')
         this.btnhold = document.querySelector('#btn-hold')
-        this.maxScore = 100
+        this.maxScore = 10
         this.dice = document.querySelector('#dice-container i')
 
         this.playerOne = playerOne
@@ -106,7 +106,7 @@ export default class Game {
             <div class="modal-content">
                 <div class="modal-body">
                 <img src="../img/victoire.jpg" class="img-fluid mb-4" alt="${this.currentPlayer.getName} a gagné ">
-                ${this.currentPlayer.getName} a remporté la partie avec un score de ${this.currentPlayer.getGlobalScore} points</div>
+                <strong>${this.currentPlayer.getName}</strong> a remporté la partie avec un score de <strong>${this.currentPlayer.getGlobalScore}</strong> points</div>
                 <div class="p-3">
                 <div class="d-grid gap-2">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sortir</button>
