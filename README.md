@@ -9,6 +9,8 @@ At each turn, the player has his ROUND initialized to 0 and can roll a die as ma
 During his turn, the player can decide at any time to:
 
 -   Click on the “Hold” option, which sends the points of the ROUND to the GLOBAL. It will then be the other player's turn.
-    -Roll the dice. If he rolls a 1, his ROUND score is lost and his turn ends.
+-   Roll the dice. If he rolls a 1, his ROUND score is lost and his turn ends.
 
 The first player to reach 100 points on global wins the game.
+
+Have fun ^^!

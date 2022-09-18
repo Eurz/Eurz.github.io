@@ -1,4 +1,3 @@
-// import Player from './models/Player.js'
 import Sounds from './Sounds.js'
 
 export default class Game {
@@ -39,7 +38,6 @@ export default class Game {
 
         const randomNumber = Math.floor(Math.random() * 5 + 1)
 
-        // this.dice.className = `bi bi-dice-${randomNumber}`
         this.dice.className = `bi bi-dice-${randomNumber}`
 
         if (randomNumber === 1) {
