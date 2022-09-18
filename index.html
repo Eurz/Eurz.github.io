@@ -12,7 +12,7 @@
         <link rel="shortcut icon" href="./favicon.svg" />
         <title>Studi Dice Game</title>
     </head>
-    <body class="vh-100 text-center py-5 bg-body-game">
+    <body class="vh-100 bg-body-game">
         <div
             class="modal fade"
             id="mainModal"
@@ -23,14 +23,27 @@
         </div>
 
         <div
-            class="container-fluid d-flex flex-column h-100 justify-content-between p-5 g-5"
+            class="container-fluid d-flex flex-column h-100 justify-content-between p-5 g-5 text-center"
         >
-            <header class="text-center">
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <span class="fs-3"
+                            ><i class="bi bi-dice-6 text-main-game"></i> Dice
+                            Game</span
+                        >
+                    </a>
+                    <a class="rules-link text-main-game" aria-current="page"
+                        >Game rules</a
+                    >
+                </div>
+            </nav>
+            <div class="text-center">
                 <button id="btn-new-game" class="btn">
                     <i class="bi bi-plus-circle text-main-game"></i> NEW GAME
                 </button>
                 <div id="message" class="opacity-50"></div>
-            </header>
+            </div>
 
             <div class="row h-100">
                 <div

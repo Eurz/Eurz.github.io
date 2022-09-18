@@ -12,7 +12,7 @@ export default class Sounds {
         }
         this._soundAction = soundAction
         this.soundGame = new Audio()
-        this.play(this._soundAction)
+        // this.play(this._soundAction)
     }
 
     play(soundsType) {
